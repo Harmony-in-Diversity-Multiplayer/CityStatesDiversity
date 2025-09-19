@@ -1,0 +1,1 @@
+delete from CSE_ClassTypes where Type = 'CSE_CONSULAR' or Type = 'CSE_ENTERTAINMENT';

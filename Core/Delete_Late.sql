@@ -1,0 +1,1 @@
+delete from TraitModifiers where TraitType = 'MINOR_CIV_CSE_ENTERTAINMENT_TRAIT' or TraitType = 'MINOR_CIV_CSE_CONSULAR_TRAIT';

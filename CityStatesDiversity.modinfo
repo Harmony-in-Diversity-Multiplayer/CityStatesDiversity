@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mod id="c0417322-9747-42d5-9717-b0df5a4c6e5d" version="2.0">
+  <Properties>
+    <Name>LOC_CITY_STATES_DIVERSITY_NAME</Name>
+    <Description>City-States Diversity</Description>
+    <Teaser>City-States Diversity</Teaser>
+    <Authors>DeepLogic, 六亿神州尽舜尧, YT, 时代的先驱, 小灰灰, 笑笑</Authors>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <CompatibleVersions>1.2,2.0</CompatibleVersions>
+  </Properties>
+  <Dependencies>
+    <Mod id="4873eb62-8ccc-4574-b784-dda455e74e68" title="Expansion: Gathering Storm" />
+    <Mod id="1B28771A-C749-434B-9053-D1380C553DE9" title="Expansion: Rise and Fall" />
+    <Mod id="7d0b57ba-6a5c-4de0-ac10-e1e464ac82f6" title="CIVITAS City-States" />
+    <Mod id="521b8777-0977-4859-a5ee-3e411a732e5c" title="Civ6 Plus: Harmony in Diversity" />
+  </Dependencies>
+  <ActionCriteria>
+    <Criteria id="Expansion2">
+      <RuleSetInUse>RULESET_EXPANSION_2</RuleSetInUse>
+    </Criteria>
+    <Criteria id="Expansion2_CSE_Ethiopia_ON">
+      <RuleSetInUse>RULESET_EXPANSION_2</RuleSetInUse>
+      <ConfigurationValueMatches>
+        <Group>Game</Group>
+        <ConfigurationId>CSE_ETHIOPIA_OPTION</ConfigurationId>
+        <Value>1</Value>
+      </ConfigurationValueMatches>
+    </Criteria>
+    <Criteria id="DLC_Ethiopia">
+      <RuleSetInUse>RULESET_EXPANSION_2</RuleSetInUse>
+      <ModInUse>1B394FE9-23DC-4868-8F0A-5220CB8FB427</ModInUse>
+    </Criteria>
+  </ActionCriteria>
+  <LocalizedText>
+    <Text id="LOC_CITY_STATES_DIVERSITY_NAME">
+      <en_US>[COLOR_Civ6LightBlue]Harmony in Diversity v2.0: City-States Diversity[ENDCOLOR]</en_US>
+      <zh_Hans_CN>[COLOR_Civ6LightBlue]【和而不同 v2.0】城邦多样化[ENDCOLOR]</zh_Hans_CN>
+    </Text>
+  </LocalizedText>
+  <FrontEndActions>
+    <UpdateColors id="CityStatesDiversityColor">
+      <Properties><LoadOrder>1</LoadOrder></Properties>
+      <File Priority="2">Core/Config.sql</File>
+    </UpdateColors>
+    <UpdateColors id="CityStatesDiversityColors">
+      <Properties><LoadOrder>10000</LoadOrder></Properties>
+      <File>Core/Colors.sql</File>
+    </UpdateColors>
+    <UpdateDatabase id="CityStatesDiversityConfig">
+      <Properties><LoadOrder>1</LoadOrder></Properties>
+      <File Priority="2">Core/Config.sql</File>
+    </UpdateDatabase>
+    <UpdateDatabase id="CityStatesDiversityPostConfig">
+      <Properties><LoadOrder>10000</LoadOrder></Properties>
+      <File>Core/PostConfig.sql</File>
+    </UpdateDatabase>
+    <UpdateIcons id="CityStatesDiversityICons_Frontend">
+      <Properties><LoadOrder>10000</LoadOrder></Properties>
+      <File>Core/Icons.sql</File>
+    </UpdateIcons>
+    <UpdateText id="CityStatesDiversityText">
+      <Properties><LoadOrder>10000</LoadOrder></Properties>
+      <File>Core/Texts.sql</File>
+    </UpdateText>
+    <ImportFiles id="ACS_Assets">
+      <Properties><LoadOrder>1</LoadOrder></Properties>
+      <File>Textures/CSD_Atlas_22.dds</File>
+      <File>Textures/CSD_Atlas_30.dds</File>
+      <File>Textures/CSD_Atlas_36.dds</File>
+      <File>Textures/CSD_Atlas_44.dds</File>
+      <File>Textures/CSD_Atlas_48.dds</File>
+      <File>Textures/CSD_Atlas_50.dds</File>
+      <File>Textures/CSD_Atlas_64.dds</File>
+      <File>Textures/CSD_Atlas_68.dds</File>
+      <File>Textures/CSD_Atlas_80.dds</File>
+      <File>Textures/CSD_Atlas_128.dds</File>
+      <File>Textures/CSD_Atlas_200.dds</File>
+      <File>Textures/CSD_Atlas_256.dds</File>
+
+      <File>Textures/NewCityStates_22.dds</File>
+      <File>Textures/NewCityStates_30.dds</File>
+      <File>Textures/NewCityStates_36.dds</File>
+      <File>Textures/NewCityStates_44.dds</File>
+      <File>Textures/NewCityStates_48.dds</File>
+      <File>Textures/NewCityStates_50.dds</File>
+      <File>Textures/NewCityStates_64.dds</File>
+      <File>Textures/NewCityStates_68.dds</File>
+      <File>Textures/NewCityStates_80.dds</File>
+      <File>Textures/NewCityStates_128.dds</File>
+      <File>Textures/NewCityStates_200.dds</File>
+      <File>Textures/NewCityStates_256.dds</File>
+
+      <File>Textures/RomanCityStates_22.dds</File>
+      <File>Textures/RomanCityStates_30.dds</File>
+      <File>Textures/RomanCityStates_36.dds</File>
+      <File>Textures/RomanCityStates_44.dds</File>
+      <File>Textures/RomanCityStates_48.dds</File>
+      <File>Textures/RomanCityStates_50.dds</File>
+      <File>Textures/RomanCityStates_64.dds</File>
+      <File>Textures/RomanCityStates_68.dds</File>
+      <File>Textures/RomanCityStates_80.dds</File>
+      <File>Textures/RomanCityStates_128.dds</File>
+      <File>Textures/RomanCityStates_200.dds</File>
+      <File>Textures/RomanCityStates_256.dds</File>
+    </ImportFiles>
+  </FrontEndActions>
+  <InGameActions>
+    <ImportFiles id="ACS_Assets" criteria="Expansion2">
+      <Properties><LoadOrder>1</LoadOrder></Properties>
+      <File>Textures/CSD_Atlas_22.dds</File>
+      <File>Textures/CSD_Atlas_30.dds</File>
+      <File>Textures/CSD_Atlas_36.dds</File>
+      <File>Textures/CSD_Atlas_44.dds</File>
+      <File>Textures/CSD_Atlas_48.dds</File>
+      <File>Textures/CSD_Atlas_50.dds</File>
+      <File>Textures/CSD_Atlas_64.dds</File>
+      <File>Textures/CSD_Atlas_68.dds</File>
+      <File>Textures/CSD_Atlas_80.dds</File>
+      <File>Textures/CSD_Atlas_128.dds</File>
+      <File>Textures/CSD_Atlas_200.dds</File>
+      <File>Textures/CSD_Atlas_256.dds</File>
+
+      <File>Textures/NewCityStates_22.dds</File>
+      <File>Textures/NewCityStates_30.dds</File>
+      <File>Textures/NewCityStates_36.dds</File>
+      <File>Textures/NewCityStates_44.dds</File>
+      <File>Textures/NewCityStates_48.dds</File>
+      <File>Textures/NewCityStates_50.dds</File>
+      <File>Textures/NewCityStates_64.dds</File>
+      <File>Textures/NewCityStates_68.dds</File>
+      <File>Textures/NewCityStates_80.dds</File>
+      <File>Textures/NewCityStates_128.dds</File>
+      <File>Textures/NewCityStates_200.dds</File>
+      <File>Textures/NewCityStates_256.dds</File>
+
+      <File>Textures/RomanCityStates_22.dds</File>
+      <File>Textures/RomanCityStates_30.dds</File>
+      <File>Textures/RomanCityStates_36.dds</File>
+      <File>Textures/RomanCityStates_44.dds</File>
+      <File>Textures/RomanCityStates_48.dds</File>
+      <File>Textures/RomanCityStates_50.dds</File>
+      <File>Textures/RomanCityStates_64.dds</File>
+      <File>Textures/RomanCityStates_68.dds</File>
+      <File>Textures/RomanCityStates_80.dds</File>
+      <File>Textures/RomanCityStates_128.dds</File>
+      <File>Textures/RomanCityStates_200.dds</File>
+      <File>Textures/RomanCityStates_256.dds</File>
+    </ImportFiles>
+    <UpdateColors id="CityStatesDiversityColor" criteria="Expansion2">
+      <Properties><LoadOrder>1</LoadOrder></Properties>
+      <File Priority="2">Core/Config.sql</File>
+    </UpdateColors>
+    <UpdateColors id="CityStatesDiversityColors" criteria="Expansion2">
+      <Properties><LoadOrder>10000</LoadOrder></Properties>
+      <File>Core/Colors.sql</File>
+    </UpdateColors>
+    <UpdateDatabase id="CityStatesDiversityConfig" criteria="Expansion2">
+      <Properties><LoadOrder>1</LoadOrder></Properties>
+      <File Priority="2">Core/Config.sql</File>
+    </UpdateDatabase>
+    <UpdateIcons id="CityStatesDiversityICons" criteria="Expansion2">
+      <Properties><LoadOrder>10000</LoadOrder></Properties>
+      <File>Core/Icons.sql</File>
+    </UpdateIcons>
+    <UpdateText id="CityStatesDiversityText" criteria="Expansion2">
+      <Properties><LoadOrder>10000</LoadOrder></Properties>
+      <File>Core/Texts.sql</File>
+    </UpdateText>
+    <UpdateDatabase id="CityStatesDiversityDatabase" criteria="Expansion2">
+      <Properties><LoadOrder>16010</LoadOrder></Properties>
+      <File>Core/Database.sql</File>
+    </UpdateDatabase>   
+    <UpdateDatabase id="CityStatesDiversityDatabase" criteria="Expansion2">
+      <Properties><LoadOrder>16002</LoadOrder></Properties>
+      <File>Core/Database_Early.sql</File>
+    </UpdateDatabase>
+    <UpdateDatabase id="CityStatesDiversityDatabase" criteria="Expansion2">
+      <Properties><LoadOrder>85</LoadOrder></Properties>
+      <File>Core/Delete_Late.sql</File>
+    </UpdateDatabase>
+    <UpdateDatabase id="CityStatesDiversityDatabase" criteria="Expansion2">
+      <Properties><LoadOrder>45</LoadOrder></Properties>
+      <File>Core/Delete.sql</File>
+    </UpdateDatabase>
+    <UpdateDatabase id="CityStatesDiversityDatabase" criteria="DLC_Ethiopia">
+      <Properties><LoadOrder>18000</LoadOrder></Properties>
+      <File>Core/Database_Ethiopia_Late.sql</File>
+    </UpdateDatabase>
+    <ImportFiles id="CityStatesDiversity_BST_Import" criteria="Expansion2">
+      <Properties><LoadOrder>10000</LoadOrder></Properties>
+      <File>UI/BST/citystates.xml</File>
+      <File>UI/BST/citystates.lua</File>
+      <File>UI/BST/citystates_bst_xp2.lua</File>
+    </ImportFiles>
+    <ReplaceUIScript id="CityStatesDiversity_BST_UI" criteria="Expansion2">
+      <Properties>
+        <LoadOrder>10000</LoadOrder>
+        <LuaContext>CityStates</LuaContext>
+        <LuaReplace>UI/BST/citystates.lua</LuaReplace>
+      </Properties>
+    </ReplaceUIScript>
+    <ReplaceUIScript id="CityStatesDiversity_BST_UI" criteria="Expansion2">
+      <Properties>
+        <LoadOrder>10002</LoadOrder>
+        <LuaContext>CityStates</LuaContext>
+        <LuaReplace>UI/BST/citystates_bst_xp2.lua</LuaReplace>
+      </Properties>
+    </ReplaceUIScript>
+    <UpdateArt id="CityStatesDiversity_Art">
+      <Properties><LoadOrder>10</LoadOrder></Properties>
+      <File>CityStatesDiversity.dep</File>
+    </UpdateArt>
+  </InGameActions>
+  <Files>
+    <File>ArtDefs/Civilizations.artdef</File>
+    <File>ArtDefs/Cultures.artdef</File>
+    <File>CityStatesDiversity.dep</File>
+    <File>Core/Colors.sql</File>
+    <File>Core/Config.sql</File>
+    <File>Core/PostConfig.sql</File>
+    <File>Core/Icons.sql</File>
+    <File>Core/Texts.sql</File>
+    <!-- In Game -->
+    <File>Core/Database.sql</File>
+    <File>Core/Database_Early.sql</File>
+    <File>Core/Delete.sql</File>
+    <File>Core/Delete_Late.sql</File>
+    <File>Core/Database_Ethiopia_Late.sql</File>
+    <!-- UI -->
+    <File>UI/BST/citystates.xml</File>
+    <File>UI/BST/citystates.lua</File>
+    <File>UI/BST/citystates_bst_xp2.lua</File>
+    <!-- icons -->
+    <File>Platforms/MacOS/BLPs/UI/Icons_AsiaCityState.blp</File>
+    <File>Platforms/Windows/BLPs/UI/Icons_AsiaCityState.blp</File>
+    <File>Textures/CSD_Atlas_22.dds</File>
+    <File>Textures/CSD_Atlas_30.dds</File>
+    <File>Textures/CSD_Atlas_36.dds</File>
+    <File>Textures/CSD_Atlas_44.dds</File>
+    <File>Textures/CSD_Atlas_48.dds</File>
+    <File>Textures/CSD_Atlas_50.dds</File>
+    <File>Textures/CSD_Atlas_64.dds</File>
+    <File>Textures/CSD_Atlas_68.dds</File>
+    <File>Textures/CSD_Atlas_80.dds</File>
+    <File>Textures/CSD_Atlas_128.dds</File>
+    <File>Textures/CSD_Atlas_200.dds</File>
+    <File>Textures/CSD_Atlas_256.dds</File>
+
+    <File>Textures/NewCityStates_22.dds</File>
+    <File>Textures/NewCityStates_30.dds</File>
+    <File>Textures/NewCityStates_36.dds</File>
+    <File>Textures/NewCityStates_44.dds</File>
+    <File>Textures/NewCityStates_48.dds</File>
+    <File>Textures/NewCityStates_50.dds</File>
+    <File>Textures/NewCityStates_64.dds</File>
+    <File>Textures/NewCityStates_68.dds</File>
+    <File>Textures/NewCityStates_80.dds</File>
+    <File>Textures/NewCityStates_128.dds</File>
+    <File>Textures/NewCityStates_200.dds</File>
+    <File>Textures/NewCityStates_256.dds</File>
+	
+	<File>Textures/RomanCityStates_22.dds</File>
+	<File>Textures/RomanCityStates_30.dds</File>
+	<File>Textures/RomanCityStates_36.dds</File>
+	<File>Textures/RomanCityStates_44.dds</File>
+	<File>Textures/RomanCityStates_48.dds</File>
+	<File>Textures/RomanCityStates_50.dds</File>
+	<File>Textures/RomanCityStates_64.dds</File>
+	<File>Textures/RomanCityStates_68.dds</File>
+	<File>Textures/RomanCityStates_80.dds</File>
+	<File>Textures/RomanCityStates_128.dds</File>
+	<File>Textures/RomanCityStates_200.dds</File>
+	<File>Textures/RomanCityStates_256.dds</File>
+  </Files>
+</Mod>
