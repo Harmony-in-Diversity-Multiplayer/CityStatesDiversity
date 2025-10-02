@@ -830,9 +830,3 @@ AND CivilizationType = "CIVILIZATION_CSE_NALANDA";
 UPDATE CivilizationLeaders
 SET CapitalName = "LOC_CITY_NAME_NALANDA"
 WHERE CivilizationType = "CIVILIZATION_CSE_NALANDA";
-
--- Removes
-delete from Types where Type = 'IMPROVEMENT_CSE_KIVA';
-delete from Types where Type = 'IMPROVEMENT_CSE_DAGOBA';
-
-delete from Resources where ResourceType like 'RESOURCE_CSE_%';
