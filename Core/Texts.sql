@@ -90,7 +90,7 @@ values
     ("LOC_CIVILIZATION_CSD_ACAPULCO_ADJECTIVE",        "Acapulco"),
     ("LOC_CIVILIZATION_CSD_ACAPULCO_DESCRIPTION",      "{LOC_CIVILIZATION_CSD_ACAPULCO_NAME} city-state"),
     ("LOC_CSD_ACAPULCO_TRAIT_NAME",                    "{LOC_CIVILIZATION_CSD_ACAPULCO_NAME} Suzerain Bonus"),
-    ("LOC_CSD_ACAPULCO_TRAIT_DESCRIPTION",             "Specialty Districts provide +2 [ICON_GOLD] Gold for each adjacent Fishing Boats. +3 [ICON_GOLD] Gold from land improvements adjacent to coast,extra +3 [ICON_GOLD] Gold after researching 'Cartography' Tech."),
+    ("LOC_CSD_ACAPULCO_TRAIT_DESCRIPTION",             "Specialty Districts provide +2 [ICON_GOLD] Gold for each adjacent Fishing Boats. +3 [ICON_GOLD] Gold from land improvements adjacent to Shallow Sea and Lake, extra +3 [ICON_GOLD] Gold after researching 'Cartography' Tech."),
     ("LOC_LEADER_MINOR_CIV_CSD_ACAPULCO_NAME",         "{LOC_CIVILIZATION_CSD_ACAPULCO_NAME}"),
     ("LOC_CITY_NAME_ACAPULCO",                         "{LOC_CIVILIZATION_CSD_ACAPULCO_NAME}"),
     -- Manila
@@ -325,7 +325,7 @@ values
     ("zh_Hans_CN",  "LOC_CIVILIZATION_CSD_ACAPULCO_ADJECTIVE",         "阿卡普尔科的"),
     ("zh_Hans_CN",  "LOC_CIVILIZATION_CSD_ACAPULCO_DESCRIPTION",       "{LOC_CIVILIZATION_CSD_ACAPULCO_NAME}城邦"),
     ("zh_Hans_CN",  "LOC_CSD_ACAPULCO_TRAIT_NAME",                     "{LOC_CIVILIZATION_CSD_ACAPULCO_NAME}宗主国加成"),
-    ("zh_Hans_CN",  "LOC_CSD_ACAPULCO_TRAIT_DESCRIPTION",              "渔船相邻每个专业化区域获得+2 [ICON_GOLD] 金币。相邻海岸与湖泊的陆地改良+3 [ICON_GOLD] 金币，研究“制图学”后则额外+3 [ICON_GOLD] 金币。"),
+    ("zh_Hans_CN",  "LOC_CSD_ACAPULCO_TRAIT_DESCRIPTION",              "渔船相邻每个专业化区域获得+2 [ICON_GOLD] 金币。相邻浅海与湖泊的陆地改良+3 [ICON_GOLD] 金币，研究“制图学”后则额外+3 [ICON_GOLD] 金币。"),
     ("zh_Hans_CN",  "LOC_LEADER_MINOR_CIV_CSD_ACAPULCO_NAME",          "{LOC_CIVILIZATION_CSD_ACAPULCO_NAME}"),
     ("zh_Hans_CN",  "LOC_CITY_NAME_ACAPULCO",                          "{LOC_CIVILIZATION_CSD_ACAPULCO_NAME}"),
     -- Manila
