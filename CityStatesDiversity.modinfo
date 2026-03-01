@@ -97,10 +97,7 @@
       <File>Textures/RomanCityStates_48.dds</File>
       <File>Textures/RomanCityStates_50.dds</File>
       <File>Textures/RomanCityStates_64.dds</File>
-      <File>Textures/RomanCityStates_68.dds</File>
       <File>Textures/RomanCityStates_80.dds</File>
-      <File>Textures/RomanCityStates_128.dds</File>
-      <File>Textures/RomanCityStates_200.dds</File>
       <File>Textures/RomanCityStates_256.dds</File>
     </ImportFiles>
   </FrontEndActions>
@@ -140,10 +137,7 @@
       <File>Textures/RomanCityStates_48.dds</File>
       <File>Textures/RomanCityStates_50.dds</File>
       <File>Textures/RomanCityStates_64.dds</File>
-      <File>Textures/RomanCityStates_68.dds</File>
       <File>Textures/RomanCityStates_80.dds</File>
-      <File>Textures/RomanCityStates_128.dds</File>
-      <File>Textures/RomanCityStates_200.dds</File>
       <File>Textures/RomanCityStates_256.dds</File>
     </ImportFiles>
     <UpdateColors id="CityStatesDiversityColor" criteria="Expansion2">
@@ -266,10 +260,7 @@
 	<File>Textures/RomanCityStates_48.dds</File>
 	<File>Textures/RomanCityStates_50.dds</File>
 	<File>Textures/RomanCityStates_64.dds</File>
-	<File>Textures/RomanCityStates_68.dds</File>
 	<File>Textures/RomanCityStates_80.dds</File>
-	<File>Textures/RomanCityStates_128.dds</File>
-	<File>Textures/RomanCityStates_200.dds</File>
 	<File>Textures/RomanCityStates_256.dds</File>
   </Files>
 </Mod>

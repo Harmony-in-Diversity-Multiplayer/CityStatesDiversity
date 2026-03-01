@@ -45,6 +45,18 @@ function dshowrectable(tTable:table, iLevel:number)
 end
 
 -- CUI -----------------------------------------------------------------------
+local function StableSortedKeyLess(a, b)
+    local ta = type(a)
+    local tb = type(b)
+    if ta ~= tb then
+        return ta < tb
+    end
+    if ta == "number" or ta == "string" then
+        return a < b
+    end
+    return tostring(a) < tostring(b)
+end
+
 function SortedTable(t, f)
     local a = {}
 
@@ -56,11 +68,16 @@ function SortedTable(t, f)
         table.sort(
             a,
             function(k1, k2)
-                return f(t, k1, k2)
+                local ab = f(t, k1, k2)
+                local ba = f(t, k2, k1)
+                if ab ~= ba then
+                    return ab
+                end
+                return StableSortedKeyLess(k1, k2)
             end
         )
     else
-        table.sort(a)
+        table.sort(a, StableSortedKeyLess)
     end
 
     local i = 0
@@ -224,7 +241,8 @@ for k, v in pairs(tCityStateTypes) do
 				if o2.isDistrict then d = d + 1024; end
 				if o1.prereqDistrict == "DISTRICT_CITY_CENTER" or o1.prereqDistrict == "DISTRICT_DIPLOMATIC_QUARTER" then d = d - 512; end
 				if o2.prereqDistrict == "DISTRICT_CITY_CENTER" or o2.prereqDistrict == "DISTRICT_DIPLOMATIC_QUARTER" then d = d + 512; end
-				return d < 0;
+				if d ~= 0 then return d < 0; end
+				return tostring(o1.name or "") < tostring(o2.name or "");
 			end);
 			local names = {};
 			for _, object in ipairs(v[level]) do
